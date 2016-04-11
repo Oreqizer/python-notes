@@ -25,9 +25,11 @@ def instantiation():
 def under_the_hood():
     print(City._fields)
     delhi_data = ('Delhi NCR', 'IN', '21.9', LatLng(' 28.6', '77.2'))
+
     # tuples: take a single iterable
     # namedtuples: take positional arguments - City(name, country, population, coordinates)
     delhi = City._make(delhi_data)  # same as City(*delhi_data), City._make takes an iterable
+
     print(delhi._asdict())  # don't do this in real life
     for key, value in delhi._asdict().items():
         print('{}: {}'.format(key, value))
