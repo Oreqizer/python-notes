@@ -12,8 +12,10 @@ class FrenchDeck:
                        for suit in self.suits
                        for rank in self.ranks]
 
+    # by defining __len__, we can use len(desk)
     def __len__(self):
         return len(self._cards)
 
+    # allows deck[item] syntax, iteration...
     def __getitem__(self, item):
         return self._cards[item]
