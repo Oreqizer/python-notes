@@ -37,7 +37,11 @@ def variable():
 
 
 if __name__ == '__main__':
+    print('> potato')
     potato()
+    print('> listcomp')
     listcomp()
+    print('> cartesian')
     cartesian()
+    print('> variable')
     variable()

@@ -18,5 +18,7 @@ def choice():
 
 
 if __name__ == '__main__':
+    print('> sorting')
     sorting()
+    print('> choice')
     choice()

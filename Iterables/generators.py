@@ -23,6 +23,9 @@ def cartesian():
 
 
 if __name__ == '__main__':
+    print('> tuples')
     tuples()
+    print('> arrays')
     arrays()
+    print('> cartesian')
     cartesian()

@@ -52,8 +52,13 @@ def nested():
 
 
 if __name__ == '__main__':
+    print('> swap')
     swap()
+    print('> capture')
     capture()
+    print('> filenaming')
     filenaming()
+    print('> excess')
     excess()
+    print('> nested')
     nested()
