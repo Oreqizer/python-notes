@@ -1,4 +1,4 @@
-# * and + on lists:
+# * and + on Lists:
 # they always create a new item, don't mutate old ones
 # they call __add__ and __mul__
 #
@@ -23,11 +23,13 @@ def tictactoe():
     print(board)
     board[1][2] = 'X'
     print(board)
+
     # BAD:
     weird = [['_'] * 3] * 3
     print(weird)
     weird[1][2] = 'X'
     print(weird)
+
     # it's like this:
     row = ['_'] * 3
     board = []
