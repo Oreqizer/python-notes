@@ -9,8 +9,6 @@
 
 
 def multiply():
-    # BEWARE: [[]] * 3 creates three references to the same list!
-    # don't use with mutable values - they keep the same reference
     l = [1, 2, 3]
     print(l * 3)
 
