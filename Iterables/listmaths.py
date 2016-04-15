@@ -35,8 +35,24 @@ def tictactoe():
         board.append(row)  # same reference
 
 
+# NEVER do this in real life.
+# works, because the error occures after the +=
+# so it is thrown, but the list is modified
+def riddle():
+    bollocks = (1, 2, [20, 30])
+    print(bollocks)
+    try:
+        bollocks[2] += [40, 50]
+    except TypeError:
+        print("TypeError, cannot modify tuple. But it works.")
+    finally:
+        print(bollocks)
+
+
 if __name__ == '__main__':
     print('> multiply')
     multiply()
     print('> tictactoe')
     tictactoe()
+    print('> riddle')
+    riddle()
