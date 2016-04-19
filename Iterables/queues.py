@@ -16,7 +16,7 @@ def dequing():
     # appending values throws excess ones away
     # from the opposite side
     # .append takes values
-    dq.append(-1)
+    dq.append(10)
     print(dq)
     # extend is the same, but takes iterables
     dq.extend([20])
