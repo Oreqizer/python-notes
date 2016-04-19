@@ -42,6 +42,7 @@ def riddle():
     bollocks = (1, 2, [20, 30])
     print(bollocks)
     try:
+        # note: bollocks[2].append() wouldn't even throw an error
         bollocks[2] += [40, 50]
     except TypeError:
         print("TypeError, cannot modify tuple. But it works.")
