@@ -40,7 +40,7 @@ def memview():
     memv_oct = memv.cast('B')
     print(memv_oct.tolist())
     memv_oct[5] = 4
-    # oct: 04 00 -> bin: 0000 0100 0000 0000 -> dec: 10 ^ 2 -> 1024
+    # oct: 04 00 -> bin: 0000 0100 0000 0000 -> dec: 2 ^ 10 -> 1024
     print(numbers)
 
 
